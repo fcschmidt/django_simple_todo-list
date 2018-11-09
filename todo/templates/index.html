@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+
+<main>
+    <h1>TODO</h1>
+
+    <div class="todo_list">
+        {% if count_item > 1 %}
+        <ul>
+            {% for todo_item in todo_list %}
+               <li>
+                   {{ todo_item }}
+                   <form action="{% url 'delete' todo_item.id %}" method="post">
+                       {% csrf_token %}
+                       <input type="submit" value="Delete">
+                   </form>
+               </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <p>No items on the list!</p>
+        {% endif %}
+    </div>
+
+    <form action="{% url 'add' %}" method="post">
+        {% csrf_token %}
+        <span class="label">What needs to be done?</span>
+        <div class="form-group">
+            {{ forms.item }}
+            <div class="input-group-btn">
+                <button class="btn" type="submit">Add # {{ next_number }}</button>
+            </div>
+        </div>
+    </form>
+</main>
+
+</body>
+</html>

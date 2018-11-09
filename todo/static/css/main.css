@@ -1,0 +1,14 @@
+.todo_list ul li{
+    padding-bottom: 1em;
+}
+.todo_list ul li form{
+    display: inline;
+    padding-left: .5em;
+}
+.input-group-btn{
+    padding-top: 1em;
+}
+.input-group-btn .btn{
+    width: 5em;
+    height: 2em;
+}
