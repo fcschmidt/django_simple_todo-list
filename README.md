@@ -5,6 +5,13 @@
 
 `cd django_simple_todo-list`
 
+### Create environments and  Install Requirements
+
+`virtualenv venv`
+
+`source  source venv/bin/activate`
+
+`pip install -r requirements.txt`
 
 ### Migrate 
 `python manage.py makemigrations`
