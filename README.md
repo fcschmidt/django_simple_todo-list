@@ -2,6 +2,7 @@
 
 ### Install
 `git clone git@github.com:fcschmidt/django_simple_todo-list.git`
+
 `cd django_simple_todo-list`
 
 
