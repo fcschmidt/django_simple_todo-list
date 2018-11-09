@@ -1,19 +1,19 @@
 # Django Simple Todo List
 
 ### Install
+`git clone git@github.com:fcschmidt/django_simple_todo-list.git`
+`cd django_simple_todo-list`
 
-### Migrations
 
-`python3 manage.py makemigrations`
+### Migrate 
+`python manage.py makemigrations`
 
-`python3 manage.py migrate`
+`python manage.py migrate`
+
 
 ### Start
+`python manage.py runserver`
 
-`python3 manage.py runserver`
+View [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
-
-virtualenv -p python3.6 venv
-
-source venv/bin/activate
