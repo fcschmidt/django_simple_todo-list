@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'django_simple_todo-list.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'todo',
         'USER': 'postgres',
         'PASSWORD': 'root',
