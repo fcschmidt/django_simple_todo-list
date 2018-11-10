@@ -5,11 +5,11 @@
 
 `cd django_simple_todo-list`
 
-### Create environments and  Install Requirements
+### Create Environment and  Install Requirements
 
 `virtualenv venv`
 
-`source  source venv/bin/activate`
+`source venv/bin/activate`
 
 `pip install -r requirements.txt`
 
